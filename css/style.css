@@ -1,0 +1,115 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --heder_color: #33394e;
+  --text_color: #cdd4ec;
+  --text_colorHover: #829bf3;
+  --main_Box_Color: #0f2836;
+  --h1_color: #e8edff;
+  --section_1_color: #262d46;
+  --cube_color: #33394e;
+  --colorWhite: #ffffff;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  /* რატო არ მუშობს აქ ჩაწერილი */
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: var(--heder_color);
+}
+
+.header_content {
+  max-width: 1440px;
+  height: 60px;
+  margin: 0 auto;
+  background-color: var(--heder_color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 120px;
+}
+
+.header_content nav ul {
+  display: flex;
+}
+
+.header_content nav ul li a {
+  margin-left: 24px;
+  font-family: 400;
+  line-height: 19px;
+  color: var(--text_color);
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  transition-property: all;
+  transition-duration: 0.7s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+}
+.header_content nav ul li a:hover {
+  color: var(--text_colorHover);
+}
+
+.section_1 {
+  width: 100%;
+  height: fit-content;
+  margin: 0 auto;
+  background-color: var(--section_1_color);
+}
+
+.section_1_container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--section_1_color);
+}
+
+.section_1_container h1 {
+  font-family: 'Inter', sans-serif;
+  height: 43px;
+  margin: 36px 0px 102px 0px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  color: var(--h1_color);
+}
+
+.section_1_container .main_Box {
+  width: 432px;
+  height: 526px;
+  border-radius: 40px;
+  background-color: var(--main_Box_Color);
+}
+
+.pages_numbers {
+  width: 244px;
+  height: 28px;
+  margin: 163px 0px 75px 0px;
+  display: flex;
+}
+
+.cube {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  margin-left: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cube_color);
+}
+
+.cube span {
+  color: var(--colorWhite);
+  font-family: 'Inter', sans-serif;
+}
