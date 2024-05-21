@@ -12,6 +12,7 @@
   --h1_color: #e8edff;
   --section_1_color: #262d46;
   --cube_color: #33394e;
+  --cube_colorHover: #3d4a78;
   --colorWhite: #ffffff;
 }
 
@@ -106,7 +107,15 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   background-color: var(--cube_color);
+  transition-property: all;
+  transition-duration: 0.7s;
+  transition-delay: 0.1s;
+  transition-timing-function: ease;
+}
+.cube:hover {
+  background-color: var(--cube_colorHover);
 }
 
 .cube span {
