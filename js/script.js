@@ -29,7 +29,7 @@ fetch(url, { method: 'GET' })
       let nightimgBox = document.querySelector('.dayOrNight');
 
       let img = document.createElement('img');
-      img.src = '../img/night.svg';
+      img.src = './img/night.svg';
 
       nightimgBox.appendChild(img);
     }
@@ -51,7 +51,7 @@ fetch(url, { method: 'GET' })
       let weatherImg = document.querySelector('.Weatherimg');
 
       let img = document.createElement('img');
-      img.src = '../img/snow.svg';
+      img.src = './img/snow.svg';
 
       weatherImg.appendChild(img);
       //! add img >]
@@ -62,7 +62,7 @@ fetch(url, { method: 'GET' })
       let weatherImg = document.querySelector('.Weatherimg');
 
       let img = document.createElement('img');
-      img.src = '../img/rain.svg';
+      img.src = './img/rain.svg';
 
       weatherImg.appendChild(img);
     } else if (
@@ -72,14 +72,14 @@ fetch(url, { method: 'GET' })
       let weatherImg = document.querySelector('.Weatherimg');
 
       let img = document.createElement('img');
-      img.src = '../img/cloudy.svg';
+      img.src = './img/cloudy.svg';
 
       weatherImg.appendChild(img);
     } else if (info.current.temperature_2m > 30) {
       let weatherImg = document.querySelector('.Weatherimg');
 
       let img = document.createElement('img');
-      img.src = '../img/sunny.png';
+      img.src = './img/sunny.png';
 
       weatherImg.appendChild(img);
     }
