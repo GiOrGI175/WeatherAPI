@@ -32,6 +32,13 @@ fetch(url, { method: 'GET' })
       img.src = './img/night.svg';
 
       nightimgBox.appendChild(img);
+    } else {
+      let nightimgBox = document.querySelector('.dayOrNight');
+
+      let img = document.createElement('img');
+      img.src = './img/day.svg';
+
+      nightimgBox.appendChild(img);
     }
 
     //! day or night >]
